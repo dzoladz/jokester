@@ -1,0 +1,28 @@
+.title {
+text-align: center;
+margin: .5em;
+}
+
+.joke {
+text-align: center;
+padding: 1em;
+width: 90%;
+justify-self: center;
+background-color: #e8f1f494 /* #e8f1f4*/;
+border: 1px solid;
+border-radius: 1em;
+}
+
+.button {
+padding: 1em;
+border: 1px solid #f4dcb0;
+margin: 5em 1em;
+width: 30%;
+justify-self: center;
+background-color: #f4dcb0 !important;
+}
+
+.button:hover {
+border: 1px solid #f4dcb0;
+background-color: #f9fafb !important;
+}

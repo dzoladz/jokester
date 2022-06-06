@@ -1,0 +1,48 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+		Photo by Austin Lowman on Unsplash
+		Published on August 4, 2020
+SONY, ILCE-7M3
+Free to use under the Unsplash License
+https://unsplash.com/photos/o77YEqQNYsM
+-->
+    <title>Jokester</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link type="text/css" rel="stylesheet" href="{% static 'css/custom/styles.css' %}">
+		{% tailwind_preload_css %}
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-gray-50 font-serif leading-normal tracking-normal">
+	<div>
+		<div class="flex items-center justify-center">
+			<div class="grid grid-cols-2 grid-rows-1">
+
+				<!-- left -->
+				<div class="grid col-span-1">
+					<img class="object-contain sepia-0" src="{% static 'assets/img/jester.jpeg' %}" loading="lazy"/>
+				</div>
+
+				<!-- right -->
+				<div class="col-span-1">
+					<div class="grid items-center h-screen">
+						<div class="grid">
+							<h1 class="text-5xl title">❤ Jokester ❤</h1>
+							<p class="joke">{{joke}}</p>
+							<p>{{question}}</p>
+							<button type="button" onclick="location.href='/'" class="button">Tell me another...</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
